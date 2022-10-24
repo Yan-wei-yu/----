@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wapiti scan report</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/kube.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/master.css" />
+</head>
+<body>
+    <div id="page">
+        <header style="text-align: center">
+        <h2 class="title" style="text-align: center">Wapiti vulnerability report</h2>
+        <h3>Target: http://demo.testfire.net/</h3>
+        <p>Date of the scan: Thu, 18 Aug 2022 04:33:24 +0000. Scope of the scan: folder</p>
+        </header>
+        <hr />
+        <h4>Summary</h4>
+        <table class="width-100 hovered" style="background: url('logo_clear.png') no-repeat center;">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Number of vulnerabilities found</th>
+                </tr>
+            </thead>
+            <tbody id="summary">
+                    <tr>
+                        <td class="small">
+                            Backup file
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Blind SQL Injection
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Weak credentials
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            CRLF Injection
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_4">Content Security Policy Configuration</a>
+                        </td>
+                        <td class="small .text-centered">2</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Cross Site Request Forgery
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Potentially dangerous file
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Command execution
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Path Traversal
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Htaccess Bypass
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_10">HTTP Secure Headers</a>
+                        </td>
+                        <td class="small .text-centered">8</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            HttpOnly Flag cookie
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Open Redirect
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_13">Secure Flag cookie</a>
+                        </td>
+                        <td class="small .text-centered">2</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            SQL Injection
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Server Side Request Forgery
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_16">Cross Site Scripting</a>
+                        </td>
+                        <td class="small .text-centered">10</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            XML External Entity
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#anom_type_0">Internal Server Error</a>
+                        </td>
+                        <td class="small .text-centered">14</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Resource consumption
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Fingerprint web technology
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+            </tbody>
+        </table>
+        <hr />
+        <div id="details">
+                <h3 id="vuln_type_4">Content Security Policy Configuration</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks.</dd>
+                </dl>
+
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-4-0-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-4-0-2">HTTP Request</a>
+                            <a href="#tab-vuln-4-0-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-4-0-1" style="min-height: 124px;">
+                            <pre>CSP is not set</pre>
+                        </section>
+                        <section id="tab-vuln-4-0-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-4-0-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-4-1-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-4-1-2">HTTP Request</a>
+                            <a href="#tab-vuln-4-1-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-4-1-1" style="min-height: 124px;">
+                            <pre>CSP is not set</pre>
+                        </section>
+                        <section id="tab-vuln-4-1-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-4-1-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+
+                <dl><dt>Solutions</dt><dd>Configuring Content Security Policy involves adding the Content-Security-Policy HTTP header to a web page and giving it values to control what resources the user agent is allowed to load for that page.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Mozilla: Content Security Policy (CSP)</a></li>
+                    <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">OWASP: Content Security Policy Cheat Sheet</a></li>
+                    <li><a href="https://owasp.org/www-pdf-archive/2019-02-22_-_How_do_I_Content_Security_Policy_-_Print.pdf">OWASP: How to do Content Security Policy (PDF)</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_10">HTTP Secure Headers</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>HTTP security headers tell the browser how to behave when handling the website&#39;s content.</dd>
+                </dl>
+
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-10-0-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-10-0-2">HTTP Request</a>
+                            <a href="#tab-vuln-10-0-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-10-0-1" style="min-height: 124px;">
+                            <pre>X-Frame-Options is not set</pre>
+                        </section>
+                        <section id="tab-vuln-10-0-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-10-0-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-10-1-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-10-1-2">HTTP Request</a>
+                            <a href="#tab-vuln-10-1-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-10-1-1" style="min-height: 124px;">
+                            <pre>X-XSS-Protection is not set</pre>
+                        </section>
+                        <section id="tab-vuln-10-1-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-10-1-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-10-2-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-10-2-2">HTTP Request</a>
+                            <a href="#tab-vuln-10-2-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-10-2-1" style="min-height: 124px;">
+                            <pre>X-Content-Type-Options is not set</pre>
+                        </section>
+                        <section id="tab-vuln-10-2-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-10-2-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-10-3-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-10-3-2">HTTP Request</a>
+                            <a href="#tab-vuln-10-3-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-10-3-1" style="min-height: 124px;">
+                            <pre>Strict-Transport-Security is not set</pre>
+                        </section>
+                        <section id="tab-vuln-10-3-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-10-3-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-10-4-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-10-4-2">HTTP Request</a>
+                            <a href="#tab-vuln-10-4-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-10-4-1" style="min-height: 124px;">
+                            <pre>X-Frame-Options is not set</pre>
+                        </section>
+                        <section id="tab-vuln-10-4-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-10-4-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-10-5-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-10-5-2">HTTP Request</a>
+                            <a href="#tab-vuln-10-5-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-10-5-1" style="min-height: 124px;">
+                            <pre>X-XSS-Protection is not set</pre>
+                        </section>
+                        <section id="tab-vuln-10-5-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-10-5-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-10-6-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-10-6-2">HTTP Request</a>
+                            <a href="#tab-vuln-10-6-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-10-6-1" style="min-height: 124px;">
+                            <pre>X-Content-Type-Options is not set</pre>
+                        </section>
+                        <section id="tab-vuln-10-6-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-10-6-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-10-7-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-10-7-2">HTTP Request</a>
+                            <a href="#tab-vuln-10-7-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-10-7-1" style="min-height: 124px;">
+                            <pre>Strict-Transport-Security is not set</pre>
+                        </section>
+                        <section id="tab-vuln-10-7-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-10-7-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+
+                <dl><dt>Solutions</dt><dd>Use the recommendations for hardening your HTTP Security Headers.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://www.netsparker.com/blog/web-security/http-security-headers/">Netsparker: HTTP Security Headers: An Easy Way to Harden Your Web Applications</a></li>
+                    <li><a href="https://www.keycdn.com/blog/http-security-headers">KeyCDN: Hardening Your HTTP Security Headers</a></li>
+                    <li><a href="https://owasp.org/www-chapter-ghana/assets/slides/HTTP_Header_Security.pdf">OWASP: HTTP SECURITY HEADERS (Protection For Browsers) (PDF)</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_13">Secure Flag cookie</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>The secure flag is an option that can be set by the application server when sending a new cookie to the user within an HTTP Response. The purpose of the secure flag is to prevent cookies from being observed by unauthorized parties due to the transmission of a the cookie in clear text.</dd>
+                </dl>
+
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-13-0-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-13-0-2">HTTP Request</a>
+                            <a href="#tab-vuln-13-0-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-13-0-1" style="min-height: 124px;">
+                            <pre>Secure flag is not set in the cookie : JSESSIONID</pre>
+                        </section>
+                        <section id="tab-vuln-13-0-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-13-0-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-13-1-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-13-1-2">HTTP Request</a>
+                            <a href="#tab-vuln-13-1-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-13-1-1" style="min-height: 124px;">
+                            <pre>Secure flag is not set in the cookie : JSESSIONID</pre>
+                        </section>
+                        <section id="tab-vuln-13-1-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET / HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-13-1-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+
+                <dl><dt>Solutions</dt><dd>When generating the cookie, make sure to set the Secure Flag to True.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">OWASP: Testing for Cookies Attributes</a></li>
+                    <li><a href="https://owasp.org/www-community/controls/SecureCookieAttribute">OWASP: Secure Cookie Attribute</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_16">Cross Site Scripting</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications which allow code injection by malicious web users into the web pages viewed by other users. Examples of such code include HTML code and client-side scripts.</dd>
+                </dl>
+
+                        <h4>Vulnerability found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-16-0-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-16-0-2">HTTP Request</a>
+                            <a href="#tab-vuln-16-0-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-16-0-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter content</pre>
+                        </section>
+                        <section id="tab-vuln-16-0-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27web9wcr9qm%27%29%3E HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-16-0-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27web9wcr9qm%27%29%3E&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-16-1-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-16-1-2">HTTP Request</a>
+                            <a href="#tab-vuln-16-1-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-16-1-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter content</pre>
+                        </section>
+                        <section id="tab-vuln-16-1-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27whv5ch2o0e%27%29%3E&amp;job=LoyaltyMarketingProgramManager%3AMarketing HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-16-1-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27whv5ch2o0e%27%29%3E&amp;job=LoyaltyMarketingProgramManager%3AMarketing&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-16-2-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-16-2-2">HTTP Request</a>
+                            <a href="#tab-vuln-16-2-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-16-2-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter content</pre>
+                        </section>
+                        <section id="tab-vuln-16-2-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27w8eln49odc%27%29%3E&amp;job=OperationalRiskManager%3ARiskManagement HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-16-2-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27w8eln49odc%27%29%3E&amp;job=OperationalRiskManager%3ARiskManagement&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-16-3-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-16-3-2">HTTP Request</a>
+                            <a href="#tab-vuln-16-3-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-16-3-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter content</pre>
+                        </section>
+                        <section id="tab-vuln-16-3-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27wyjzhhy9sj%27%29%3E&amp;job=ExecutiveAssistant%3AAdministration HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-16-3-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27wyjzhhy9sj%27%29%3E&amp;job=ExecutiveAssistant%3AAdministration&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-16-4-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-16-4-2">HTTP Request</a>
+                            <a href="#tab-vuln-16-4-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-16-4-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter content</pre>
+                        </section>
+                        <section id="tab-vuln-16-4-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27wyt6k4fgy8%27%29%3E&amp;job=Teller%3AConsumaerBanking HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-16-4-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27wyt6k4fgy8%27%29%3E&amp;job=Teller%3AConsumaerBanking&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-16-5-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-16-5-2">HTTP Request</a>
+                            <a href="#tab-vuln-16-5-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-16-5-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter content</pre>
+                        </section>
+                        <section id="tab-vuln-16-5-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27wj5zm6rs34%27%29%3E&amp;job=CustomerServiceRepresentative%3ACustomerService HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-16-5-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27wj5zm6rs34%27%29%3E&amp;job=CustomerServiceRepresentative%3ACustomerService&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-16-6-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-16-6-2">HTTP Request</a>
+                            <a href="#tab-vuln-16-6-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-16-6-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter content</pre>
+                        </section>
+                        <section id="tab-vuln-16-6-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27wykzub1yl3%27%29%3E&amp;job=MortgageLendingAccountExecutive%3ASales HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-vuln-16-6-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=%3CSvG%0AoNloAd%3Dalert%28%27wykzub1yl3%27%29%3E&amp;job=MortgageLendingAccountExecutive%3ASales&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /search.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-16-7-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-16-7-2">HTTP Request</a>
+                            <a href="#tab-vuln-16-7-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-16-7-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter query</pre>
+                        </section>
+                        <section id="tab-vuln-16-7-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /search.jsp?query=%3CScRiPt%3Ealert%28%27wlzg6ge5mj%27%29%3C%2FsCrIpT%3E HTTP/1.1
+Host: demo.testfire.net
+Referer: http://demo.testfire.net/</pre>
+                        </section>
+                        <section id="tab-vuln-16-7-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/search.jsp?query=%3CScRiPt%3Ealert%28%27wlzg6ge5mj%27%29%3C%2FsCrIpT%3E&#34; -e &#34;http://demo.testfire.net/&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /sendFeedback</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-16-8-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-16-8-2">HTTP Request</a>
+                            <a href="#tab-vuln-16-8-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-16-8-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter name</pre>
+                        </section>
+                        <section id="tab-vuln-16-8-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>POST /sendFeedback HTTP/1.1
+Host: demo.testfire.net
+Referer: http://demo.testfire.net/feedback.jsp
+Content-Type: application/x-www-form-urlencoded
+
+cfile=comments.txt&amp;name=%3CScRiPt%3Ealert%28%27wh85wymzob%27%29%3C%2FsCrIpT%3E&amp;email_addr=wapiti2021%40mailinator.com&amp;subject=default&amp;submit=+Submit+&amp;comments=Hi+there%21</pre>
+                        </section>
+                        <section id="tab-vuln-16-8-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/sendFeedback&#34; -e &#34;http://demo.testfire.net/feedback.jsp&#34; -d &#34;cfile=comments.txt&amp;name=%3CScRiPt%3Ealert%28%27wh85wymzob%27%29%3C%2FsCrIpT%3E&amp;email_addr=wapiti2021%40mailinator.com&amp;subject=default&amp;submit=+Submit+&amp;comments=Hi+there%21&#34;</pre>
+                        </section>
+                        <h4>Vulnerability found in /sendFeedback</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-16-9-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-16-9-2">HTTP Request</a>
+                            <a href="#tab-vuln-16-9-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-vuln-16-9-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter email_addr</pre>
+                        </section>
+                        <section id="tab-vuln-16-9-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>POST /sendFeedback HTTP/1.1
+Host: demo.testfire.net
+Referer: http://demo.testfire.net/feedback.jsp
+Content-Type: application/x-www-form-urlencoded
+
+cfile=comments.txt&amp;name=&amp;email_addr=%3CSvG%0AoNloAd%3Dalert%28%27wqtjvtsz6i%27%29%3E&amp;subject=default&amp;submit=+Submit+&amp;comments=Hi+there%21</pre>
+                        </section>
+                        <section id="tab-vuln-16-9-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/sendFeedback&#34; -e &#34;http://demo.testfire.net/feedback.jsp&#34; -d &#34;cfile=comments.txt&amp;name=&amp;email_addr=%3CSvG%0AoNloAd%3Dalert%28%27wqtjvtsz6i%27%29%3E&amp;subject=default&amp;submit=+Submit+&amp;comments=Hi+there%21&#34;</pre>
+                        </section>
+
+                <dl><dt>Solutions</dt><dd>The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:<, >, &, ', (, ), #, %, ; , +, -</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-community/attacks/xss/">OWASP: Cross Site Scripting (XSS)</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Cross-site_scripting">Wikipedia: Cross-site scripting</a></li>
+                    <li><a href="https://cwe.mitre.org/data/definitions/79.html">CWE-79: Improper Neutralization of Input During Web Page Generation (&#39;Cross-site Scripting&#39;)</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="anom_type_0">Internal Server Error</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>An error occurred on the server&#39;s side, preventing it to process the request. It may be the sign of a vulnerability.</dd>
+                </dl>
+
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-0-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-0-2">HTTP Request</a>
+                            <a href="#tab-anom-0-0-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-0-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-0-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-0-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-1-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-1-2">HTTP Request</a>
+                            <a href="#tab-anom-0-1-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-1-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-1-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=LoyaltyMarketingProgramManager%3AMarketing HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-1-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=LoyaltyMarketingProgramManager%3AMarketing&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-2-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-2-2">HTTP Request</a>
+                            <a href="#tab-anom-0-2-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-2-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-2-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=OperationalRiskManager%3ARiskManagement HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-2-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=OperationalRiskManager%3ARiskManagement&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-3-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-3-2">HTTP Request</a>
+                            <a href="#tab-anom-0-3-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-3-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-3-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=ExecutiveAssistant%3AAdministration HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-3-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=ExecutiveAssistant%3AAdministration&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-4-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-4-2">HTTP Request</a>
+                            <a href="#tab-anom-0-4-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-4-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-4-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=Teller%3AConsumaerBanking HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-4-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=Teller%3AConsumaerBanking&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-5-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-5-2">HTTP Request</a>
+                            <a href="#tab-anom-0-5-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-5-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-5-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=CustomerServiceRepresentative%3ACustomerService HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-5-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=CustomerServiceRepresentative%3ACustomerService&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-6-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-6-2">HTTP Request</a>
+                            <a href="#tab-anom-0-6-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-6-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-6-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=MortgageLendingAccountExecutive%3ASales HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-6-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fusr%2Fbin%2Fenv%7C&amp;job=MortgageLendingAccountExecutive%3ASales&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-7-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-7-2">HTTP Request</a>
+                            <a href="#tab-anom-0-7-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-7-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-7-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-7-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-8-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-8-2">HTTP Request</a>
+                            <a href="#tab-anom-0-8-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-8-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-8-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=LoyaltyMarketingProgramManager%3AMarketing HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-8-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=LoyaltyMarketingProgramManager%3AMarketing&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-9-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-9-2">HTTP Request</a>
+                            <a href="#tab-anom-0-9-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-9-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-9-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=OperationalRiskManager%3ARiskManagement HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-9-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=OperationalRiskManager%3ARiskManagement&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-10-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-10-2">HTTP Request</a>
+                            <a href="#tab-anom-0-10-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-10-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-10-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=ExecutiveAssistant%3AAdministration HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-10-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=ExecutiveAssistant%3AAdministration&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-11-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-11-2">HTTP Request</a>
+                            <a href="#tab-anom-0-11-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-11-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-11-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=Teller%3AConsumaerBanking HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-11-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=Teller%3AConsumaerBanking&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-12-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-12-2">HTTP Request</a>
+                            <a href="#tab-anom-0-12-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-12-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-12-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=CustomerServiceRepresentative%3ACustomerService HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-12-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=CustomerServiceRepresentative%3ACustomerService&#34;</pre>
+                        </section>
+                        <h4>Anomaly found in /index.jsp</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-anom-0-13-1" class="is-active">Description</a>
+                            <a href="#tab-anom-0-13-2">HTTP Request</a>
+                            <a href="#tab-anom-0-13-3">cURL command line</a>
+                        </nav>
+                        <section id="tab-anom-0-13-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter content</pre>
+                        </section>
+                        <section id="tab-anom-0-13-2" style="min-height: 124px;" class="is-hidden">
+                            <pre>GET /index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=MortgageLendingAccountExecutive%3ASales HTTP/1.1
+Host: demo.testfire.net</pre>
+                        </section>
+                        <section id="tab-anom-0-13-3" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://demo.testfire.net/index.jsp?content=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Flib%2F&amp;job=MortgageLendingAccountExecutive%3ASales&#34;</pre>
+                        </section>
+
+                <dl><dt>Solutions</dt><dd>More information about the error should be found in the server logs.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_Error">Wikipedia: List of 5xx HTTP status codes</a></li>
+                    <li><a href="https://owasp.org/www-community/Improper_Error_Handling">OWASP: Improper Error Handling</a></li>
+                </ul>
+                <br />
+                <hr>
+        </div>
+        <footer class="small" id="footer"><a href="https://wapiti.sourceforge.io/" id="wapiti_link">Wapiti 3.0.4</a> &copy; Nicolas SURRIBAS 2006-2021</footer>
+	</div>
+    <script>$K.init();</script>
+</body>
+</html>
